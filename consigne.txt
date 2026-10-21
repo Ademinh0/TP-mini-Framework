@@ -1,0 +1,27 @@
+Rédiger les user stories
+Découpez le framework du plus large au plus fin : une epic par grande partie (grille, bouton, carte, documentation), puis des user stories réalisables, puis si besoin des tâches techniques.
+Chaque story suit la formule En tant que… je veux… afin de… et possède au moins un critère d’acceptation.
+Exemple de user story
+En tant que développeur intégrateur, je veux une classe .btn--primary afin d’afficher un bouton principal sans écrire de CSS.
+Critère d’acceptation : le bouton utilise la couleur $color-primary et change de teinte au survol.
+
+
+
+Prioriser et estimer
+•	Classez chaque story avec MoSCoW : Must (indispensable), Should (important), Could (si le temps le permet), Won’t (pas aujourd’hui).
+•	Rédigez votre Definition of Done : la liste des conditions qui rendent une story terminée.
+Exemple de Definition of Done
+Le SCSS compile sans erreur.
+Les classes respectent la notation BEM, et toutes les valeurs passen
+
+Préparer le tableau Trello
+Une carte par story, avec son code (US01, US02…), sa priorité MoSCoW, son estimation et ses critères d’acceptation. 
+t par des variables.
+L’exemple HTML est ajouté à la documentation.
+Le code a été relu par un autre membre de l’équipe, puis fusionné.
+
+Chaque groupe présente :
+1.	Une démonstration : la planche des composants, puis la page  sur ordinateur.
+2.	Son backlog final : les stories terminées, celles qui ne le sont pas, et pourquoi.
+3.	Sa rétrospective de la journée : ce qu’il garderait et ce qu’il changerait.
+
