@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Framework - Accueil</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <!-- ========== Header ========== -->
+    <header class="header">
+        <div class="container header__contenu">
+
+            <a href="index.html" class="header__logo">Mini Framework</a>
+
+            <nav class="header__nav">
+                <a href="index.html" class="header__lien header__lien--actif">Accueil</a>
+                <a href="composants.html" class="header__lien">Composants</a>
+            </nav>
+
+        </div>
+    </header>
+
+
+    <main class="accueil">
+
+        <!-- ========== Hero / Présentation ========== -->
+        <section class="hero">
+            <div class="container hero__contenu">
+
+                <h1 class="hero__titre">Bienvenue sur Mini Framework</h1>
+
+                <p class="hero__texte">
+                    Un mini-framework CSS simple et réutilisable,
+                    développé avec SCSS, SMACSS et BEM.
+                </p>
+
+                <a href="composants.html" class="btn btn--primary btn--large">
+                    Voir les composants
+                </a>
+
+            </div>
+        </section>
+
+
+        <!-- ========== Description ========== -->
+        <section class="presentation">
+            <div class="container">
+
+                <h2 class="presentation__titre">Notre framework</h2>
+
+                <p class="presentation__texte">
+                    Notre framework permet de créer des pages web facilement
+                    grâce à des composants réutilisables.
+                    Il contient une grille, des boutons et des cartes.
+                </p>
+
+            </div>
+        </section>
+
+
+        <!-- ========== Aperçu des composants ========== -->
+        <section class="composants-apercu">
+            <div class="container">
+
+                <h2 class="composants-apercu__titre">Nos composants</h2>
+
+                <p class="composants-apercu__texte">
+                    Découvrez les différents éléments disponibles.
+                </p>
+
+                <div class="grid">
+
+                    <!-- Carte : Grille -->
+                    <div class="grid__col grid__col--4">
+                        <article class="card">
+                            <div class="card__contenu">
+                                <h3 class="card__titre">Grille</h3>
+                                <p class="card__texte">
+                                    Une grille de 12 colonnes pour organiser les éléments.
+                                </p>
+                                <a href="composants.html#grille" class="btn btn--secondary">
+                                    Découvrir
+                                </a>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- Carte : Boutons -->
+                    <div class="grid__col grid__col--4">
+                        <article class="card">
+                            <div class="card__contenu">
+                                <h3 class="card__titre">Boutons</h3>
+                                <p class="card__texte">
+                                    Des boutons primaires, secondaires et de différentes tailles.
+                                </p>
+                                <a href="composants.html#boutons" class="btn btn--secondary">
+                                    Découvrir
+                                </a>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- Carte : Cartes -->
+                    <div class="grid__col grid__col--4">
+                        <article class="card">
+                            <div class="card__contenu">
+                                <h3 class="card__titre">Cartes</h3>
+                                <p class="card__texte">
+                                    Des cartes pour afficher des images, titres et textes.
+                                </p>
+                                <a href="composants.html#cartes" class="btn btn--secondary">
+                                    Découvrir
+                                </a>
+                            </div>
+                        </article>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- ========== Footer ========== -->
+    <footer class="footer">
+        <div class="container footer__contenu">
+
+            <p class="footer__texte">Mini Framework - Projet SCSS / SMACSS / BEM</p>
+
+            <a href="composants.html" class="footer__lien">Voir les composants</a>
+
+        </div>
+    </footer>
+
+</body>
+
+</html>
