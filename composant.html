@@ -1,0 +1,202 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Framework - Composants</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container header__contenu">
+            <a href="index.html" class="header__logo">Mini Framework</a>
+            <nav class="header__nav">
+                <a href="index.html" class="header__lien">Accueil</a>
+                <a href="composants.html" class="header__lien header__lien--actif">Composants</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="documentation">
+        <div class="container">
+            <!-- Introduction -->
+            <section class="documentation__intro">
+                <h1 class="documentation__titre">Bibliothèque de composants</h1>
+                <p class="documentation__texte">Retrouvez tous les composants du framework avec des exemples de leur utilisation.</p>
+            </section>
+
+            <!-- Sommaire -->
+            <nav class="sommaire">
+                <h2 class="sommaire__titre">Sommaire</h2>
+                <ul class="sommaire__liste">
+                    <li class="sommaire__item"><a href="#grille" class="sommaire__lien">Grille</a></li>
+                    <li class="sommaire__item"><a href="#boutons" class="sommaire__lien">Boutons</a></li>
+                    <li class="sommaire__item"><a href="#cartes" class="sommaire__lien">Cartes</a></li>
+                </ul>
+            </nav>
+
+            <!-- Grille de 12 colonnes -->
+            <section class="section-doc" id="grille">
+                <h2 class="section-doc__titre">1. Système de grille</h2>
+                <p class="section-doc__texte">Notre grille possède 12 colonnes pour organiser les éléments d'une page.</p>
+                <h3 class="section-doc__sous-titre">12 colonnes</h3>
+                <div class="grid">
+                    <div class="grid__col grid__col--1"><div class="grid__demo">1</div></div>
+                    <div class="grid__col grid__col--1"><div class="grid__demo">1</div></div>
+                    <div class="grid__col grid__col--1"><div class="grid__demo">1</div></div>
+                    <div class="grid__col grid__col--1"><div class="grid__demo">1</div></div>
+                    <div class="grid__col grid__col--1"><div class="grid__demo">1</div></div>
+                    <div class="grid__col grid__col--1"><div class="grid__demo">1</div></div>
+                    <div class="grid__col grid__col--1"><div class="grid__demo">1</div></div>
+                    <div class="grid__col grid__col--1"><div class="grid__demo">1</div></div>
+                    <div class="grid__col grid__col--1"><div class="grid__demo">1</div></div>
+                    <div class="grid__col grid__col--1"><div class="grid__demo">1</div></div>
+                    <div class="grid__col grid__col--1"><div class="grid__demo">1</div></div>
+                    <div class="grid__col grid__col--1"><div class="grid__demo">1</div></div>
+                </div>
+
+                <!-- Exemples de colonnes -->
+                <h3 class="section-doc__sous-titre">2 colonnes</h3>
+                <div class="grid">
+                    <div class="grid__col grid__col--6"><div class="grid__demo">6 colonnes</div></div>
+                    <div class="grid__col grid__col--6"><div class="grid__demo">6 colonnes</div></div>
+                </div>
+                <h3 class="section-doc__sous-titre">3 colonnes</h3>
+                <div class="grid">
+                    <div class="grid__col grid__col--4"><div class="grid__demo">4 colonnes</div></div>
+                    <div class="grid__col grid__col--4"><div class="grid__demo">4 colonnes</div></div>
+                    <div class="grid__col grid__col--4"><div class="grid__demo">4 colonnes</div></div>
+                </div>
+                <h3 class="section-doc__sous-titre">4 colonnes</h3>
+                <div class="grid">
+                    <div class="grid__col grid__col--3"><div class="grid__demo">3</div></div>
+                    <div class="grid__col grid__col--3"><div class="grid__demo">3</div></div>
+                    <div class="grid__col grid__col--3"><div class="grid__demo">3</div></div>
+                    <div class="grid__col grid__col--3"><div class="grid__demo">3</div></div>
+                </div>
+
+                <!-- Colonnes de tailles différentes -->
+                <h3 class="section-doc__sous-titre">Colonnes différentes</h3>
+                <div class="grid">
+                    <div class="grid__col grid__col--8"><div class="grid__demo">8</div></div>
+                    <div class="grid__col grid__col--4"><div class="grid__demo">4</div></div>
+                </div>
+                <div class="grid">
+                    <div class="grid__col grid__col--5"><div class="grid__demo">5</div></div>
+                    <div class="grid__col grid__col--7"><div class="grid__demo">7</div></div>
+                </div>
+                <div class="grid">
+                    <div class="grid__col grid__col--2"><div class="grid__demo">2</div></div>
+                    <div class="grid__col grid__col--10"><div class="grid__demo">10</div></div>
+                </div>
+                <div class="grid">
+                    <div class="grid__col grid__col--9"><div class="grid__demo">9</div></div>
+                    <div class="grid__col grid__col--3"><div class="grid__demo">3</div></div>
+                </div>
+                <div class="grid">
+                    <div class="grid__col grid__col--11"><div class="grid__demo">11</div></div>
+                    <div class="grid__col grid__col--1"><div class="grid__demo">1</div></div>
+                </div>
+                <div class="grid">
+                    <div class="grid__col grid__col--12"><div class="grid__demo">12 colonnes</div></div>
+                </div>
+
+                <h3 class="section-doc__sous-titre">Exemple HTML</h3>
+                <pre class="section-doc__code"><code>&lt;div class="grid"&gt;
+  &lt;div class="grid__col grid__col--6"&gt;Colonne 1&lt;/div&gt;
+  &lt;div class="grid__col grid__col--6"&gt;Colonne 2&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+            </section>
+
+            <!-- Boutons -->
+            <section class="section-doc" id="boutons">
+                <h2 class="section-doc__titre">2. Boutons</h2>
+                <p class="section-doc__texte">Les boutons existent en plusieurs styles et tailles.</p>
+
+                <h3 class="section-doc__sous-titre">Styles des boutons</h3>
+                <div class="boutons-demo">
+                    <button class="btn btn--primary">Primaire</button>
+                    <button class="btn btn--secondary">Secondaire</button>
+                </div>
+
+                <h3 class="section-doc__sous-titre">Tailles des boutons</h3>
+                <div class="boutons-demo">
+                    <button class="btn btn--primary btn--small">Petit bouton</button>
+                    <button class="btn btn--primary">Bouton normal</button>
+                    <button class="btn btn--primary btn--large">Grand bouton</button>
+                </div>
+
+                <h3 class="section-doc__sous-titre">Boutons secondaires</h3>
+                <div class="boutons-demo">
+                    <button class="btn btn--secondary btn--small">Petit</button>
+                    <button class="btn btn--secondary btn--large">Grand</button>
+                </div>
+
+                <h3 class="section-doc__sous-titre">Exemple HTML</h3>
+                <pre class="section-doc__code"><code>&lt;button class="btn btn--primary"&gt;Primaire&lt;/button&gt;
+&lt;button class="btn btn--secondary"&gt;Secondaire&lt;/button&gt;
+&lt;button class="btn btn--primary btn--small"&gt;Petit&lt;/button&gt;
+&lt;button class="btn btn--primary btn--large"&gt;Grand&lt;/button&gt;</code></pre>
+            </section>
+
+            <!-- Cartes -->
+            <section class="section-doc" id="cartes">
+                <h2 class="section-doc__titre">3. Cartes</h2>
+                <p class="section-doc__texte">Les cartes peuvent contenir une image, un titre, un texte et un bouton.</p>
+                <div class="grid">
+                    <!-- Carte complète -->
+                    <div class="grid__col grid__col--4">
+                        <article class="card">
+                            <img src="https://placehold.co/600x350?text=Image" alt="" class="card__image">
+                            <div class="card__contenu">
+                                <h3 class="card__titre">Carte complète</h3>
+                                <p class="card__texte">Cette carte possède une image, un titre, un texte et un bouton.</p>
+                                <button class="btn btn--primary">Voir plus</button>
+                            </div>
+                        </article>
+                    </div>
+                    <!-- Carte sans image -->
+                    <div class="grid__col grid__col--4">
+                        <article class="card">
+                            <div class="card__contenu">
+                                <h3 class="card__titre">Carte sans image</h3>
+                                <p class="card__texte">Cette carte possède seulement un titre, un texte et un bouton.</p>
+                                <button class="btn btn--secondary">Découvrir</button>
+                            </div>
+                        </article>
+                    </div>
+                    <!-- Carte simple -->
+                    <div class="grid__col grid__col--4">
+                        <article class="card">
+                            <div class="card__contenu">
+                                <h3 class="card__titre">Carte simple</h3>
+                                <p class="card__texte">Cette carte affiche uniquement un titre et une description.</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+                <h3 class="section-doc__sous-titre">Exemple HTML</h3>
+                <pre class="section-doc__code"><code>&lt;article class="card"&gt;
+  &lt;img src="image.jpg" alt="" class="card__image"&gt;
+  &lt;div class="card__contenu"&gt;
+    &lt;h3 class="card__titre"&gt;Titre&lt;/h3&gt;
+    &lt;p class="card__texte"&gt;Description&lt;/p&gt;
+    &lt;button class="btn btn--primary"&gt;Voir plus&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/article&gt;</code></pre>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer__contenu">
+            <p class="footer__texte">Mini Framework - Projet SCSS / SMACSS / BEM</p>
+            <a href="index.html" class="footer__lien">Retour à l'accueil</a>
+        </div>
+    </footer>
+</body>
+</html>
