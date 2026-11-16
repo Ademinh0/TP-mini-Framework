@@ -6,7 +6,6 @@ En tant que développeur intégrateur, je veux une classe .btn--primary afin d�
 Critère d’acceptation : le bouton utilise la couleur $color-primary et change de teinte au survol.
 
 
-
 Prioriser et estimer
 •	Classez chaque story avec MoSCoW : Must (indispensable), Should (important), Could (si le temps le permet), Won’t (pas aujourd’hui).
 •	Rédigez votre Definition of Done : la liste des conditions qui rendent une story terminée.

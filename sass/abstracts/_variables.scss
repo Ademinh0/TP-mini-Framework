@@ -1,0 +1,32 @@
+// COULEURS
+$color-primary: #000;
+$color-secondary: #fff;
+$color-tertiary: #f00;
+$color-background: #0004ff;
+$color-border: #1a1717;
+
+// TYPOGRAPHIE
+$font-family-base: Arial, sans-serif;
+$font-weight-normal: 400;
+$font-weight-bold: 700;
+
+$font-size-unit: 0.8rem;
+
+$font-size-sm: $font-size-unit;
+$font-size-base: $font-size-unit * 1.2;
+$font-size-lg: $font-size-unit * 1.4;
+$font-size-title: $font-size-unit * 1.6;
+
+// ESPACEMENTS
+$spacing-unit: 0.25rem;
+
+$space-1: $spacing-unit;
+$space-2: $spacing-unit * 2;
+$space-3: $spacing-unit * 3;
+$space-4: $spacing-unit * 4;
+$space-6: $spacing-unit * 6;
+$space-8: $spacing-unit * 8;
+
+// GRILLE
+$grid-columns: 12;
+$grid-gutter: $space-4;

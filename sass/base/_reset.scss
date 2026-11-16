@@ -1,0 +1,43 @@
+@use 'absrtract' as *;
+
+// Reset général
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// Texte de base
+body {
+    min-height: 100vh;
+    font-family: $font-family-base;
+    font-size: $font-size-base;
+    font-weight: $font-weight-normal;
+    color: $color-primary;
+    line-height: 1.5;
+}
+
+// Images
+img {
+    display: block;
+    max-width: 100%;
+}
+
+// Liens et listes
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+// Champs et boutons
+button, input, textarea, select {
+    font: inherit;
+}
+
+button {
+    cursor: pointer;
+}
