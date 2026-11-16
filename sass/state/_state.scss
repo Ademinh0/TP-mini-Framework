@@ -1,6 +1,14 @@
 @use '../abstracts' as *;
 
+.btn--primary:hover {
+    background: $color-primary-hover;
+}
+
+.btn--secondary:hover {
+    background: $color-secondary-hover;
+}
+
 .header__link--active {
-  border-bottom-color: $color-secondary;
-  font-weight: $font-weight-bold;
+    border-bottom-color: $color-secondary;
+    font-weight: $font-weight-bold;
 }

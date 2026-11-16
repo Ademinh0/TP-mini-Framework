@@ -1,11 +1,12 @@
-// COULEURS
-$color-primary: #000;
+$color-primary: #315bc5;
 $color-secondary: #fff;
-$color-tertiary: #f00;
-$color-background: #0004ff;
-$color-border: #1a1717;
+$color-tertiary: #f2c46d;
+$color-background: #f6f8fc;
+$color-border: #dbe2ed;
+$color-text: #243047;
+$color-muted: #5c6679;
+$color-panel: #e9effc;
 
-// TYPOGRAPHIE
 $font-family-base: Arial, sans-serif;
 $font-weight-normal: 400;
 $font-weight-bold: 700;
@@ -17,7 +18,6 @@ $font-size-base: $font-size-unit * 1.2;
 $font-size-lg: $font-size-unit * 1.4;
 $font-size-title: $font-size-unit * 1.6;
 
-// ESPACEMENTS
 $spacing-unit: 0.25rem;
 
 $space-1: $spacing-unit;
@@ -27,8 +27,14 @@ $space-4: $spacing-unit * 4;
 $space-6: $spacing-unit * 6;
 $space-8: $spacing-unit * 8;
 
-// GRILLE
 $grid-columns: 12;
 $grid-gutter: $space-4;
-// CONTENEUR
-$container-width: 70rem;
+
+$border-width: 1px;
+$border-radius: 8px;
+$card-image-height: 180px;
+$color-primary-hover: #24469c;
+$color-secondary-hover: #dce6fc;
+$container-width: 1120px;
+$text-width: 65ch;
+$transition-time: 0.2s;

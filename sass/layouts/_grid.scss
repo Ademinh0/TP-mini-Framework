@@ -1,34 +1,33 @@
 @use '../abstracts' as *;
 
 .container {
-  width: 100%;
   max-width: $container-width;
-  margin-inline: auto;
-  padding-inline: $space-4;
+  margin: 0 auto;
+  padding: 0 $space-6;
 }
 
 .grid {
   display: grid;
-  grid-template-columns: repeat($grid-columns, 1fr);
+  grid-template-columns: repeat($grid-columns, minmax(0, 1fr));
   gap: $grid-gutter;
   margin-bottom: $space-4;
 }
 
-.grid__col {
+.col {
   min-width: 0;
-}
 
-@for $i from 1 through $grid-columns {
-  .grid__col--#{$i} {
-    grid-column: span $i;
+  @for $i from 1 through $grid-columns {
+    &--#{$i} {
+      @include column($i);
+    }
   }
-}
 
-// Case de démo (page composants)
-.grid__demo {
-  padding: $space-3;
-  text-align: center;
-  color: $color-secondary;
-  background-color: $color-background;
-  border-radius: $space-1;
+  &__demo {
+    padding: $space-2;
+    border: $border-width solid $color-border;
+    text-align: center;
+    color: $color-primary;
+    background: $color-panel;
+    border-radius: $border-radius;
+  }
 }

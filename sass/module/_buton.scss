@@ -1,44 +1,35 @@
 @use '../abstracts' as *;
 
 .btn {
-  display: inline-block;
-  padding: $space-2 $space-4;
-  font-size: $font-size-base;
-  font-weight: $font-weight-bold;
-  border: 2px solid $color-primary;
-  border-radius: $space-1;
-  transition: background-color 0.2s, color 0.2s, border-color 0.2s;
-}
+    display: inline-block;
+    padding: $space-2 $space-4;
+    border: $border-width solid $color-border;
+    border-radius: $border-radius;
+    font-family: $font-family-base;
+    font-size: $font-size-base;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: $font-weight-bold;
+    transition: background-color $transition-time, border-color $transition-time;
 
-// Styles
-.btn--primary {
-  background-color: $color-primary;
-  color: $color-secondary;
+    &--primary {
+        background: $color-primary;
+        color: $color-secondary;
+        border-color: $color-primary;
+    }
 
-  &:hover {
-    background-color: $color-tertiary;
-    border-color: $color-tertiary;
-  }
-}
+    &--secondary {
+        background: $color-panel;
+        color: $color-primary;
+    }
 
-.btn--secondary {
-  background-color: $color-secondary;
-  color: $color-primary;
+    &--small {
+        padding: $space-1 $space-2;
+        font-size: $font-size-sm;
+    }
 
-  &:hover {
-    background-color: $color-background;
-    border-color: $color-background;
-    color: $color-secondary;
-  }
-}
-
-// Tailles
-.btn--small {
-  padding: $space-1 $space-3;
-  font-size: $font-size-sm;
-}
-
-.btn--large {
-  padding: $space-3 $space-6;
-  font-size: $font-size-lg;
+    &--large {
+        padding: $space-3 $space-6;
+        font-size: $font-size-lg;
+    }
 }

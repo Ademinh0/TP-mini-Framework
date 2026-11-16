@@ -1,0 +1,3 @@
+@mixin column($size) {
+    grid-column: span $size;
+}
