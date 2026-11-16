@@ -1,0 +1,56 @@
+@use "../abstracts" as a;
+
+.btn {
+    display: inline-block;
+    border: a.$border-width solid transparent;
+    border-radius: a.$radius;
+    font-family: a.$font-family;
+    line-height: a.$line-height;
+    text-decoration: none;
+    cursor: pointer;
+    @include a.button-size(a.$space-small, a.$font-size);
+
+    &--primary {
+        background: a.$color-primary;
+        color: a.$color-white;
+    }
+
+    &--secondary {
+        background: a.$color-secondary;
+        color: a.$color-text;
+    }
+
+    &--small {
+        @include a.button-size(a.$space-tiny, a.$font-small);
+    }
+
+    &--large {
+        @include a.button-size(a.$space, a.$font-large);
+    }
+}
+
+.card {
+    overflow: hidden;
+    background: a.$color-white;
+    border: a.$border-width solid a.$color-border;
+    border-radius: a.$radius;
+
+    &__image {
+        display: block;
+        width: 100%;
+        height: a.$image-height;
+        object-fit: cover;
+    }
+
+    &__body {
+        padding: a.$space;
+    }
+
+    &__title {
+        font-size: a.$font-large;
+    }
+
+    &__text {
+        color: a.$color-muted;
+    }
+}

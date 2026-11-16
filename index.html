@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini-framework CSS</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main>
+        <header>
+            <h1>Mini-framework CSS</h1>
+            <p>Une grille, des boutons et des cartes en SCSS.</p>
+            <nav aria-label="Composants">
+                <a href="#grille">Grille</a> ·
+                <a href="#boutons">Boutons</a> ·
+                <a href="#cartes">Cartes</a> ·
+                <a href="#exemple">Démonstration</a>
+            </nav>
+        </header>
+
+        <section id="grille">
+            <h2>Grille de 12 colonnes</h2>
+            <p>Placer les colonnes dans <code>.grid</code>. Chaque colonne utilise <code>.col</code>
+                et une taille de <code>.col--1</code> à <code>.col--12</code>.</p>
+            <div class="grid">
+                <div class="col col--12">12 colonnes</div>
+            </div>
+            <div class="grid">
+                <div class="col col--6">6</div>
+                <div class="col col--6">6</div>
+            </div>
+            <div class="grid">
+                <div class="col col--4">4</div>
+                <div class="col col--8">8</div>
+            </div>
+            <div class="grid">
+                <div class="col col--3">3</div>
+                <div class="col col--9">9</div>
+            </div>
+            <div class="grid">
+                <div class="col col--2">2</div>
+                <div class="col col--10">10</div>
+            </div>
+            <div class="grid">
+                <div class="col col--5">5</div>
+                <div class="col col--7">7</div>
+            </div>
+            <div class="grid">
+                <div class="col col--1">1</div>
+                <div class="col col--11">11</div>
+            </div>
+            <p>Une ligne représente 12 colonnes. Au-delà, les colonnes passent à la ligne suivante.</p>
+        </section>
+
+        <section id="boutons">
+            <h2>Boutons</h2>
+            <p>La classe <code>.btn</code> définit la structure. Ajouter une couleur et, si besoin, une taille.</p>
+            <p>
+                <a class="btn btn--primary" href="#exemple">Primaire</a>
+                <a class="btn btn--secondary" href="#exemple">Secondaire</a>
+                <a class="btn btn--primary btn--small" href="#exemple">Petit bouton</a>
+                <a class="btn btn--primary btn--large" href="#exemple">Grand bouton</a>
+            </p>
+            <p>Les mêmes classes fonctionnent avec un lien.</p>
+        </section>
+
+        <section id="cartes">
+            <h2>Cartes</h2>
+            <p>L’image, le titre, le texte et le bouton sont facultatifs. Placer le contenu dans <code>.card__body</code>.</p>
+        </section>
+
+        <section id="exemple">
+            <h2>Démonstration</h2>
+            <p>Trois cartes dans trois colonnes de 4.</p>
+            <div class="grid">
+                <div class="col col--4">
+                    <article class="card">
+                        <img class="card__image" src="meme.jpg" alt="Meme Distracted Boyfriend">
+                        <div class="card__body">
+                            <h3 class="card__title">Quand tu changes de framework</h3>
+                            <p class="card__text">Juste une image de meme dans la carte.</p>
+                            <a class="btn btn--primary" href="#grille">Voir la grille</a>
+                        </div>
+                    </article>
+                </div>
+                <div class="col col--4">
+                    <article class="card">
+                        <div class="card__body">
+                            <h3 class="card__title">Sans image</h3>
+                            <p class="card__text">La carte fonctionne aussi avec un titre, du texte et un bouton.</p>
+                            <a class="btn btn--secondary" href="#boutons">Voir les boutons</a>
+                        </div>
+                    </article>
+                </div>
+                <div class="col col--4">
+                    <article class="card">
+                        <div class="card__body">
+                            <h3 class="card__title">Version simple</h3>
+                            <p class="card__text">Ici, seulement un titre et un texte.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

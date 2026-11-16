@@ -1,0 +1,14 @@
+@use "../abstracts" as a;
+
+.btn--primary:hover {
+    background: a.$color-primary-hover;
+}
+
+.btn--secondary:hover {
+    background: a.$color-secondary-hover;
+}
+
+.btn:focus-visible {
+    outline: a.$focus-width solid a.$color-primary;
+    outline-offset: a.$focus-offset;
+}

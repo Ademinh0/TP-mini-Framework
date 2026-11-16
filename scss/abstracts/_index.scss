@@ -1,0 +1,34 @@
+@use "sass:math";
+
+$color-primary: #315bc5;
+$color-primary-hover: #254698;
+$color-secondary: #e5e8ef;
+$color-secondary-hover: #d2d7e2;
+$color-text: #252d3d;
+$color-muted: #586174;
+$color-white: #fff;
+$color-border: #d8deea;
+$font-family: Arial, sans-serif;
+$font-size: 16px;
+$font-small: 14px;
+$font-large: 20px;
+$line-height: 1.5;
+$space-small: 8px;
+$space-tiny: 4px;
+$space: 16px;
+$columns: 12;
+$gutter: 16px;
+$border-width: 1px;
+$radius: 6px;
+$image-height: 160px;
+$focus-width: 3px;
+$focus-offset: 3px;
+
+@mixin column($size) {
+    width: math.percentage(math.div($size, $columns));
+}
+
+@mixin button-size($padding, $size) {
+    padding: $padding ($padding * 2);
+    font-size: $size;
+}

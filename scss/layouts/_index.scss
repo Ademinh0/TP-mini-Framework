@@ -1,0 +1,18 @@
+@use "sass:math";
+@use "../abstracts" as a;
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col {
+    padding: 0 math.div(a.$gutter, 2);
+    margin-bottom: a.$gutter;
+
+    @for $i from 1 through a.$columns {
+        &--#{$i} {
+            @include a.column($i);
+        }
+    }
+}
