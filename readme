@@ -1,2 +1,10 @@
-Commande dans le terminal :
+Installation :
+npm install
 
+Compiler le Sass :
+npm run build
+
+Compiler automatiquement pendant les modifications :
+npm run dev
+
+Les sources sont dans sass/. Le dossier dist/ est genere par npm et ignore par Git.

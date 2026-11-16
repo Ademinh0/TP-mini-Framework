@@ -1,0 +1,12 @@
+{
+  "name": "tp-mini-framework",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "sass sass/main.scss dist/style.css --no-source-map",
+    "dev": "sass --watch sass/main.scss:dist/style.css --no-source-map"
+  },
+  "devDependencies": {
+    "sass": "^1.106.0"
+  }
+}
