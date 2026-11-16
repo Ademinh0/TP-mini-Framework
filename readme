@@ -1,10 +1,7 @@
-Installation :
-npm install
-
 Compiler le Sass :
-npm run build
+npx sass sass/main.scss dist/style.css --no-source-map
 
 Compiler automatiquement pendant les modifications :
-npm run dev
+npx sass --watch sass/main.scss:dist/style.css --no-source-map
 
-Les sources sont dans sass/. Le dossier dist/ est genere par npm et ignore par Git.
+Les sources sont dans sass/. Le dossier dist/ est genere par Sass et ignore par Git.
