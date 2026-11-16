@@ -1,0 +1,6 @@
+@use '../abstracts' as *;
+
+.header__link--active {
+  border-bottom-color: $color-secondary;
+  font-weight: $font-weight-bold;
+}

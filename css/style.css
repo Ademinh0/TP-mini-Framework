@@ -1,0 +1,316 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  font-size: 0.96rem;
+  font-weight: 400;
+  color: #000;
+  line-height: 1.5;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+button, input, textarea, select {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+.container {
+  width: 100%;
+  max-width: 70rem;
+  margin-inline: auto;
+  padding-inline: 1rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.grid__col {
+  min-width: 0;
+}
+
+.grid__col--1 {
+  grid-column: span 1;
+}
+
+.grid__col--2 {
+  grid-column: span 2;
+}
+
+.grid__col--3 {
+  grid-column: span 3;
+}
+
+.grid__col--4 {
+  grid-column: span 4;
+}
+
+.grid__col--5 {
+  grid-column: span 5;
+}
+
+.grid__col--6 {
+  grid-column: span 6;
+}
+
+.grid__col--7 {
+  grid-column: span 7;
+}
+
+.grid__col--8 {
+  grid-column: span 8;
+}
+
+.grid__col--9 {
+  grid-column: span 9;
+}
+
+.grid__col--10 {
+  grid-column: span 10;
+}
+
+.grid__col--11 {
+  grid-column: span 11;
+}
+
+.grid__col--12 {
+  grid-column: span 12;
+}
+
+.grid__demo {
+  padding: 0.75rem;
+  text-align: center;
+  color: #fff;
+  background-color: #0004ff;
+  border-radius: 0.25rem;
+}
+
+.header {
+  background-color: #000;
+  color: #fff;
+}
+
+.header__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-block: 1rem;
+}
+
+.header__logo {
+  font-size: 1.12rem;
+  font-weight: 700;
+}
+
+.header__nav {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.header__link {
+  padding-bottom: 0.25rem;
+  border-bottom: 2px solid transparent;
+}
+.header__link:hover {
+  border-bottom-color: #f00;
+}
+
+.footer {
+  margin-top: 2rem;
+  background-color: #000;
+  color: #fff;
+}
+
+.footer__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-block: 1.5rem;
+}
+
+.footer__link {
+  font-weight: 700;
+}
+.footer__link:hover {
+  color: #f00;
+}
+
+.hero {
+  padding-block: 4rem;
+  text-align: center;
+  background-color: #0004ff;
+  color: #fff;
+}
+
+.hero__title {
+  margin-bottom: 1rem;
+  font-size: 2.56rem;
+}
+
+.hero__text {
+  max-width: 40rem;
+  margin: 0 auto 1.5rem;
+  font-size: 1.12rem;
+}
+
+.framework-intro,
+.components-preview {
+  padding-block: 2rem;
+}
+
+.framework-intro {
+  text-align: center;
+  border-bottom: 1px solid #1a1717;
+}
+
+.framework-intro__title,
+.components-preview__title {
+  margin-bottom: 0.75rem;
+  font-size: 1.28rem;
+  color: #0004ff;
+}
+
+.framework-intro__text,
+.components-preview__text {
+  margin-bottom: 1.5rem;
+}
+
+.documentation {
+  padding-block: 2rem;
+}
+
+.documentation__title {
+  margin-bottom: 1.5rem;
+  font-size: 1.92rem;
+  color: #0004ff;
+}
+
+.documentation-section {
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #1a1717;
+}
+
+.documentation-section__title {
+  margin-bottom: 0.5rem;
+  font-size: 1.28rem;
+}
+
+.documentation-section__text {
+  margin-bottom: 1rem;
+}
+
+.documentation-section__subtitle {
+  margin-block: 1rem 0.5rem;
+  font-size: 1.12rem;
+}
+
+.button-demo {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+}
+
+.header__link--active {
+  border-bottom-color: #fff;
+  font-weight: 700;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+  background-color: #fff;
+  border: 1px solid #1a1717;
+  border-radius: 0.5rem;
+  transition: border-color 0.2s;
+}
+.card:hover {
+  border-color: #0004ff;
+}
+
+.card__image {
+  width: 100%;
+}
+
+.card__content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.75rem;
+  padding: 1rem;
+}
+
+.card__title {
+  font-size: 1.12rem;
+  color: #0004ff;
+}
+
+.card__text {
+  font-size: 0.96rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  font-size: 0.96rem;
+  font-weight: 700;
+  border: 2px solid #000;
+  border-radius: 0.25rem;
+  transition: background-color 0.2s, color 0.2s, border-color 0.2s;
+}
+
+.btn--primary {
+  background-color: #000;
+  color: #fff;
+}
+.btn--primary:hover {
+  background-color: #f00;
+  border-color: #f00;
+}
+
+.btn--secondary {
+  background-color: #fff;
+  color: #000;
+}
+.btn--secondary:hover {
+  background-color: #0004ff;
+  border-color: #0004ff;
+  color: #fff;
+}
+
+.btn--small {
+  padding: 0.25rem 0.75rem;
+  font-size: 0.8rem;
+}
+
+.btn--large {
+  padding: 0.75rem 1.5rem;
+  font-size: 1.12rem;
+}

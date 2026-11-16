@@ -1,1 +1,37 @@
 @use '../abstracts' as *;
+
+.card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+  background-color: $color-secondary;
+  border: 1px solid $color-border;
+  border-radius: $space-2;
+  transition: border-color 0.2s;
+
+  &:hover {
+    border-color: $color-background;
+  }
+}
+
+.card__image {
+  width: 100%;
+}
+
+.card__content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: $space-3;
+  padding: $space-4;
+}
+
+.card__title {
+  font-size: $font-size-lg;
+  color: $color-background;
+}
+
+.card__text {
+  font-size: $font-size-base;
+}
